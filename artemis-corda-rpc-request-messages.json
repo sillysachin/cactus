@@ -1,0 +1,40 @@
+{
+  "ServerConsumer [id=93165337:94f8f844-f219-11ea-95ea-a85e4551a295:0, filter=null, binding=LocalQueueBinding [address=rpc.server, queue=QueueImpl[name=rpc.server, postOffice=PostOfficeImpl [server=ActiveMQServerImpl::serverUUID=9402632a-f219-11ea-95ea-a85e4551a295], temp=false]@3e6a173f]]": [
+    {
+      "rpc-id": "6d728db7-b06f-43e6-91cc-2e552a87349c",
+      "address": "rpc.server",
+      "deduplication-sequence-number": 0,
+      "rpc-id-timestamp": 1599620158357,
+      "messageID": 28,
+      "method-name": "getProtocolVersion",
+      "type": 0,
+      "priority": 4,
+      "rpc-session-id": "2178dfce-6826-4ebc-8a36-922ed887e713",
+      "rpc-session-id-timestamp": 1599620157370,
+      "durable": false,
+      "JMSReplyTo": "rpc.client.user1.894645352516452180",
+      "expiration": 0,
+      "tag": 0,
+      "_AMQ_VALIDATED_USER": "user1",
+      "timestamp": 1599620158587
+    },
+    {
+      "rpc-id": "cf856429-5c9e-44f6-9fcd-fa3e8ce04319",
+      "address": "rpc.server",
+      "deduplication-sequence-number": 1,
+      "rpc-id-timestamp": 1599620159098,
+      "messageID": 30,
+      "method-name": "nodeInfo",
+      "type": 0,
+      "priority": 4,
+      "rpc-session-id": "2178dfce-6826-4ebc-8a36-922ed887e713",
+      "rpc-session-id-timestamp": 1599620157370,
+      "durable": false,
+      "JMSReplyTo": "rpc.client.user1.894645352516452180",
+      "expiration": 0,
+      "tag": 0,
+      "_AMQ_VALIDATED_USER": "user1",
+      "timestamp": 1599620159098
+    }
+  ]
+}

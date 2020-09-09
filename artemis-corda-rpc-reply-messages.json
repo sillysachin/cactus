@@ -1,0 +1,34 @@
+{
+  "ServerConsumer [id=0284966b:fc9ae223-f247-11ea-8f98-a85e4551a295:0, filter=null, binding=LocalQueueBinding [address=rpc.client.user1.894645352516452180, queue=QueueImpl[name=rpc.client.user1.894645352516452180, postOffice=PostOfficeImpl [server=ActiveMQServerImpl::serverUUID=9402632a-f219-11ea-95ea-a85e4551a295], temp=true]@2f4e628]]": [
+    {
+      "rpc-id": "6d728db7-b06f-43e6-91cc-2e552a87349c",
+      "address": "rpc.client.user1.894645352516452180",
+      "deduplication-sequence-number": 0,
+      "rpc-id-timestamp": 1599620158357,
+      "messageID": 29,
+      "type": 0,
+      "priority": 4,
+      "durable": false,
+      "deduplication-identity": "34dfd747-3520-4394-9812-9a7f78577986",
+      "expiration": 0,
+      "tag": 0,
+      "_AMQ_VALIDATED_USER": "SystemUsers/NodeRPC",
+      "timestamp": 1599620158663
+    },
+    {
+      "rpc-id": "cf856429-5c9e-44f6-9fcd-fa3e8ce04319",
+      "address": "rpc.client.user1.894645352516452180",
+      "deduplication-sequence-number": 1,
+      "rpc-id-timestamp": 1599620159098,
+      "messageID": 31,
+      "type": 0,
+      "priority": 4,
+      "durable": false,
+      "deduplication-identity": "34dfd747-3520-4394-9812-9a7f78577986",
+      "expiration": 0,
+      "tag": 0,
+      "_AMQ_VALIDATED_USER": "SystemUsers/NodeRPC",
+      "timestamp": 1599620159109
+    }
+  ]
+}

@@ -4,6 +4,7 @@ RUN mkdir -p /opt/corda/bin
 COPY --from=corda /opt/corda/bin/ /opt/corda/bin/
 
 ARG KEYPATH=~/.ssh/id_rsa.pub
+ARG HAWT_IO_VERSION=2.10.1
 
 
 # Set up Open-SSH server
@@ -84,6 +85,19 @@ ADD deploy_contract.sh /opt/corda/builder/deploy_contract.sh
 RUN chmod +x /opt/corda/builder/deploy_contract.sh
 ADD builder/gradlew /opt/corda/builder/gradlew
 ADD builder/gradle /opt/corda/builder/gradle
+
+# set up hawt.io for JMX monitoring (party A and B nodes)
+
+RUN wget -O hawtio-app.jar https://repo1.maven.org/maven2/io/hawt/hawtio-app/${HAWT_IO_VERSION}/hawtio-app-${HAWT_IO_VERSION}.jar
+
+# Party A Jolokia
+EXPOSE 7005
+
+# Party B Jolokia
+EXPOSE 7006
+
+# hawt.io web UI
+EXPOSE  8080
 
 EXPOSE 10013
 EXPOSE 10014
